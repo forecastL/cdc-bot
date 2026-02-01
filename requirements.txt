@@ -1,0 +1,8 @@
+nodriver
+pytest
+pytest-asyncio
+requests
+pyyaml
+setuptools
+python-dotenv
+opencv-python

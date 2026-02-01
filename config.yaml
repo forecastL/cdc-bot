@@ -1,0 +1,60 @@
+headless: false # unusable in headless mode currently
+
+dry_run: false # set to true to not book any slots, just print them
+
+monthly_quota: 6 # currently not working due to missing logic to load previous bookings
+
+auto_book: true
+
+value_check: true
+
+excluded_dates:  #expected format: YYYY-MM-DD in string
+  "2025-11-14": [1, 2]
+
+included_dates: # expected format: YYYY-MM-DD in string : set of session numbers
+  "2026-01-24": [1, 2, 3, 4, 5, 6, 7]
+  "2026-01-25": [1, 2, 3, 4, 5, 6, 7]
+  "2026-01-31": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-01": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-07": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-08": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-14": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-15": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-21": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-22": [1, 2, 3, 4, 5, 6, 7]
+  "2026-02-28": [1, 2, 3, 4, 5, 6, 7]
+  "2026-03-01": [1, 2, 3, 4, 5, 6, 7]
+  "2026-03-07": [1, 2, 3, 4, 5, 6, 7]
+  "2026-03-08": [1, 2, 3, 4, 5, 6, 7]
+
+allowed_sessions: # expected format: DAY: set of session numbers
+  SAT: [7]
+
+non_peak_sessions: [1, 3, 4] # session numbers that are considered non-peak
+
+one_slot_per_day: true # if true, only one slot will be booked per day, even if multiple are available
+
+course:
+  name: "MANUAL-C3"
+  value: "MANUAL-C3           "
+  display_name: "Class 3 Manual"
+
+# course:
+#   name: "PEP-C3"
+#   value: "PEP-C3              "
+#   display_name: "Class 3 Pre-PT Enhancement Practice & Assessment"
+
+# course:
+#   name: "AUTOCAR-C3A"
+#   value: "AUTOCAR-C3A         "
+#   display_name: "Class 3 Auto"
+
+# course:
+#   name: "SCHOOL E-TRIAL TEST"
+#   value: "SCHOOL E-TRIAL TEST "
+#   display_name: "School E-Trial Test"
+
+# course:
+#   name: "VPC-UBI"
+#   value: "VPC-UBI             "
+#   display_name: "VPC UBI"
